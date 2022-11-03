@@ -5,6 +5,9 @@ const thumbsContainer = {
   flexDirection: 'row',
   flexWrap: 'wrap',
   marginTop: 16,
+  width: '38em',
+  height: '16em',
+  overflow: 'auto',
 };
 
 const thumb = {
@@ -57,19 +60,21 @@ export default function FileUploadComponent({
     [currentUrl]
   );
   return (
-    <section>
+    <section className="card">
       <div
         style={{
           border: '1px dashed gray',
-          padding: '50px',
+          padding: '5em',
           textAlign: 'center',
-          height: 20,
+          height: 50,
           overflow: 'auto',
+          margin: '0px 1rem',
+          borderRadius: '10px',
         }}
       >
         <div {...getRootProps({ className: 'dropzone' })}>
           <input {...getInputProps()} max={7} />
-          <p>Drag 'n' drop some files here, or click to select files</p>
+          <p>Drag & drop files, or click to select files</p>
         </div>
       </div>
       <aside style={thumbsContainer}>

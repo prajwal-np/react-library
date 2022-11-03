@@ -4,7 +4,6 @@ import './style.css';
 
 export default function App() {
   return (
-    <div>
       <FileUploadComponent
         accept={'image'}
         formDataEvent={(event) => {
@@ -17,6 +16,5 @@ export default function App() {
           console.log('get preview url', url);
         }}
       />
-    </div>
   );
 }

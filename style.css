@@ -1,3 +1,28 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  padding: 5em;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: #eaeaea;
+  color: black;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+body,
+#root {
+  min-height: 100vh;
+  background-color: #404258;
+}
+
+#root {
+  display: flex;
 }
